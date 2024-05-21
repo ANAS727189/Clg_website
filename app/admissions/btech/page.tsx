@@ -2,16 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Page() {
-    const ImageList = [
-        '/images/DSC_0027.JPG',
-        '/images/DSC_2041.JPG',
-        '/images/DSC_6398.JPG',
-        '/images/IMG_0052.JPG',
-        '/images/DSC_0027.JPG',
-        '/images/DSC_2041.JPG',
-        '/images/DSC_6398.JPG',
-        '/images/IMG_0052.JPG'
-    ]
     return (
         <div className="max-w-5xl p-4 flex flex-col gap-2">
             <p className="text-dwd-primary font-bold text-xl text-center mb-2">B.Tech. Admissions 2024</p>
@@ -33,15 +23,6 @@ export default function Page() {
             <button className='mt-2 block w-fit rounded bg-dwd-primary text-white text-sm p-0'>
                 <Link className='block py-2 px-4' href=''>Courses Details</Link>
             </button>
-            <p className='mt-2 text-lg font-bold text-dwd-primary'>Campus Life</p>
-            <video className='rounded' src="/IIIT.mp4" controls></video>
-            <div className='grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4'>
-                {
-                    ImageList.map(imgSrc => (
-                        <Image height={300} width={300} loading="eager" key={imgSrc} alt='campus-life-image' className='h-full w-full rounded' src={imgSrc} />
-                    ))
-                }
-            </div>
             <button className='mt-2 block w-fit rounded bg-dwd-primary text-white text-sm p-0'>
                 <Link className='block py-2 px-4' href=''>Explore our campus</Link>
             </button>
