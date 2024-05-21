@@ -112,11 +112,11 @@ const ClubCard: FC<{ clubName: string; aboutText: string; members: { name: strin
         <h2 className="text-center text-2xl font-bold mb-4">{clubName}</h2>
         <div className="flex justify-center mb-4">
           <button
-            className={`px-4 py-2 cursor-pointer hover:text-sky-600 rounded-md mr-2 ${showAbout ? 'bg-dwd-primary text-white' : 'bg-gray-400'}`}
+            className={`px-4 py-2 cursor-pointer  rounded-md mr-2 ${showAbout ? 'bg-dwd-primary hover:text-sky-600 text-white' : 'bg-dwd-secondary1 hover:text-white'}`}
             onClick={() => setShowAbout(true)}>ABOUT
           </button>
           <button
-            className={`px-4 py-2 cursor-pointer hover:text-sky-600 rounded-md ${!showAbout ? 'bg-dwd-primary text-white' : 'bg-dwd-secondary1'}`}
+            className={`px-4 py-2 cursor-pointer hover:text-sky-600 rounded-md ${!showAbout ? 'bg-dwd-primary hover:text-sky-600 text-white' : 'bg-dwd-secondary1 hover:text-white'}`}
             onClick={() => setShowAbout(false)}>MEMBERS
           </button>
         </div>
